@@ -3,6 +3,8 @@
 // Copyright (C) Leszek Pomianowski and WPF UI Contributors.
 // All Rights Reserved.
 
+using System.Windows.Automation;
+using System.Windows.Automation.Provider;
 using System.Windows.Controls;
 
 namespace WPFGallery.Controls;
@@ -11,7 +13,7 @@ namespace WPFGallery.Controls;
 /// A control that displays an example of a control
 /// </summary>
 
-[ContentProperty(nameof(ExampleContent))]
+[ContentProperty(nameof(ExampleContent))] 
 public class ControlExample : Control
 {
     static ControlExample()
@@ -25,6 +27,13 @@ public class ControlExample : Control
         typeof(ControlExample),
         new PropertyMetadata(null)
     );
+
+    //public static readonly DependencyProperty NarratorTextProperty = DependencyProperty.Register(
+    //    nameof(NarratorText),
+    //    typeof(string),
+    //    typeof(ControlExample),
+    //    new PropertyMetadata(null)
+    //);
 
     public static readonly DependencyProperty ExampleContentProperty = DependencyProperty.Register(
         nameof(ExampleContent),
@@ -72,6 +81,12 @@ public class ControlExample : Control
         get => (string)GetValue(HeaderTextProperty);
         set => SetValue(HeaderTextProperty, value);
     }
+
+    //public string? NarratorText
+    //{
+    //    get => (string)GetValue(NarratorTextProperty);
+    //    set => SetValue(NarratorTextProperty, value);
+    //}
 
     public object? ExampleContent
     {
@@ -125,6 +140,7 @@ public class ControlExample : Control
                     {
                         case "Copy_XamlCode":
                             Clipboard.SetText(controlExample.XamlCode);
+                            //NarratorText = "XAML code copied to clipboard";
                             break;
                         case "Copy_CsharpCode":
                             Clipboard.SetText(controlExample.CsharpCode);
@@ -160,5 +176,30 @@ public class ControlExample : Control
             return e.ToString();
         }
     }
+
+    //private void CopyButton_Click(object sender, RoutedEventArgs e)
+    //{
+    //    string textToNarrate = "Hello, this is a sample text to be narrated.";
+    //    AnnounceText(textToNarrate);
+    //}
+
+    //private void AnnounceText(string text)
+    //{
+    //    Window parentWindow = Window.GetWindow(this);
+    //    // Create an AutomationElement for the main window
+    //    //AutomationElement element = AutomationElement.FromHandle(new System.Windows.Interop.WindowInteropHelper(parentWindow).Handle);
+    //    var provider = AutomationInteropProvider.HostProviderFromHandle(new System.Windows.Interop.WindowInteropHelper(parentWindow).Handle);
+    //    // Create an AutomationEventArgs with the required Message
+    //    AutomationEventArgs args = new AutomationEventArgs(AutomationElement.AutomationFocusChangedEvent);
+    //    AutomationInteropProvider.RaiseAutomationEvent(InvokePatternIdentifiers.InvokedEvent, provider, args);
+
+    //    // Set the live setting to assertive (or polite, depending on your preference)
+    //    AutomationLiveSetting liveSetting = AutomationLiveSetting.Assertive;
+    //    AutomationProperties.SetLiveSetting(parentWindow, liveSetting);
+
+    //    // Set the announcement text
+    //    AutomationProperties.SetName(parentWindow, text);
+    //}
+
 }
 

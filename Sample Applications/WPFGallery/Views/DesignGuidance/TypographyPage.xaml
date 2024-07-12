@@ -4,6 +4,7 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:WPFGallery.Views"
+      
       mc:Ignorable="d" Foreground="{DynamicResource TextFillColorPrimaryBrush}"
       xmlns:controls="clr-namespace:WPFGallery.Controls" 
       d:DesignHeight="450" d:DesignWidth="800"
@@ -29,7 +30,7 @@
         <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Margin="0,0,0,12">
           The minimum values should be 12px Regular, 14px Semibold.
         </TextBlock>
-        <controls:ControlExample
+        <controls:ControlExample2
                 Margin="10"
                 HeaderText="Type ramp"
                 XamlCode="&lt;TextBlock Text=&quot;Caption&quot; Style=&quot;{StaticResource CaptionTextBlockStyle}&quot; /&gt;
@@ -298,7 +299,7 @@
                         </Grid>
                     </StackPanel>
                 </Grid>
-            </controls:ControlExample>
+            </controls:ControlExample2>
       </StackPanel>
     </ScrollViewer>
 

@@ -50,7 +50,6 @@
                 </controls:ControlExample>
 
                 <controls:ControlExample
-                    Margin="10,32,10,10"
                     HeaderText="A ComboBox with ItemsSource set."
                     XamlCode="&lt;ComboBox MinWidth=&quot;200&quot; HorizontalAlignment=&quot;Left&quot; ItemsSource=&quot;{Binding FontFamilies}&quot; SelectedIndex=&quot;0&quot; /&gt;">
                     <ComboBox
