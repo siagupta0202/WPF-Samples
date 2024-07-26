@@ -34,7 +34,7 @@
 
         <ScrollViewer Grid.Row="1" Margin="0,0,0,24" Padding="0,0,24,0">
             <StackPanel Margin="0,0,0,24">
-                <controls:ControlExample
+                <controls:ControlExample2
                     Margin="10"
                     HeaderText="Default DataGrid with ItemsSource."
                     XamlCode="&lt;DataGrid ItemsSource=&quot;{Binding ViewModel.ProductsCollection, Mode=TwoWay}&quot; /&gt;">
@@ -42,7 +42,7 @@
                         Height="400"
                         AutomationProperties.Name="Sample Data Grid"
                         ItemsSource="{Binding ViewModel.ProductsCollection, Mode=TwoWay}" />
-                </controls:ControlExample>
+                </controls:ControlExample2>
 
             </StackPanel>
         </ScrollViewer>

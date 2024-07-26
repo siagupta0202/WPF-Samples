@@ -33,7 +33,7 @@
 
         <ScrollViewer Grid.Row="1" Margin="0,0,0,24" Padding="0,0,24,0">
             <StackPanel Margin="0,0,0,24">
-                <controls:ControlExample
+                <controls:ControlExample2
                     Margin="10"
                     HeaderText="Standard RadioButton."
                     XamlCode="&lt;StackPanel&gt;             &#10;&#9;&lt;RadioButton Content=&quot;Option 1&quot; GroupName=&quot;radio_group_one&quot; IsChecked=&quot;True&quot;/&gt;             &#10;&#9;&lt;RadioButton Content=&quot;Option 2&quot; GroupName=&quot;radio_group_one&quot; /&gt;             &#10;&#9;&lt;RadioButton Content=&quot;Option 3&quot; GroupName=&quot;radio_group_one&quot; /&gt;             &#10;&lt;/StackPanel&gt;">
@@ -66,9 +66,9 @@
                             CommandParameter="{Binding RelativeSource={RelativeSource Self}, Mode=OneWay}"
                             Content="Disable RadioButton's" />
                     </Grid>
-                </controls:ControlExample>
+                </controls:ControlExample2>
 
-                <controls:ControlExample
+                <controls:ControlExample2
                     Margin="10,36,10,10"
                     HeaderText="RadioButton with right to left flow direction."
                     XamlCode="&lt;StackPanel&gt;             &#10;&#9;&lt;RadioButton Content=&quot;Option 1&quot; FlowDirection=&quot;RightToLeft&quot; GroupName=&quot;radio_group_one&quot; IsChecked=&quot;True&quot;/&gt;             &#10;&#9;&lt;RadioButton Content=&quot;Option 2&quot; FlowDirection=&quot;RightToLeft&quot; GroupName=&quot;radio_group_one&quot; /&gt;             &#10;&#9;&lt;RadioButton Content=&quot;Option 3&quot; FlowDirection=&quot;RightToLeft&quot; GroupName=&quot;radio_group_one&quot; /&gt;             &#10;&lt;/StackPanel&gt;">
@@ -90,7 +90,7 @@
                             FlowDirection="RightToLeft"
                             GroupName="radio_group_two" />
                     </StackPanel>
-                </controls:ControlExample>
+                </controls:ControlExample2>
             </StackPanel>
 
         </ScrollViewer>

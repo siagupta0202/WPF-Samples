@@ -33,7 +33,7 @@
 
         <ScrollViewer Grid.Row="1" Margin="0,0,0,24" Padding="0,0,24,0">
             <StackPanel Margin="0,0,0,24">
-                <controls:ControlExample
+                <controls:ControlExample2
                     Margin="10"
                     HeaderText="A simple progress bar."
                     XamlCode="&lt;ProgressBar Value=&quot;40&quot; /&gt;">
@@ -41,9 +41,9 @@
                         Margin="24"
                         AutomationProperties.Name="A determinate"
                         Value="40" />
-                </controls:ControlExample>
+                </controls:ControlExample2>
 
-                <controls:ControlExample
+                <controls:ControlExample2
                     Margin="10,32,10,10"
                     HeaderText="An indeterminate progress bar."
                     XamlCode="&lt;ProgressBar IsIndeterminate=&quot;True&quot; /&gt;">
@@ -51,7 +51,7 @@
                         Margin="24"
                         AutomationProperties.Name="An indeterminate"
                         IsIndeterminate="True" />
-                </controls:ControlExample>
+                </controls:ControlExample2>
             </StackPanel>
         </ScrollViewer>
     </Grid>

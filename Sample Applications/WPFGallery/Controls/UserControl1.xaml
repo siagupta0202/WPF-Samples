@@ -1,0 +1,25 @@
+﻿<UserControl x:Class="WPFGallery.Controls.UserControl1"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:WPFGallery.Controls"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            
+        </Grid.RowDefinitions>
+        <TextBlock
+    Grid.Row="0"
+    Margin="0,0,0,10"
+    Foreground="{DynamicResource TextFillColorPrimaryBrush}"
+    Style="{StaticResource BodyStrongTextBlockStyle}"
+    Text="{Binding HeaderText}"
+     />
+
+        <Button x:Name="new_button" Background="Yellow" Content="hello" Click="Button_Click"/>
+
+    </Grid>
+</UserControl>

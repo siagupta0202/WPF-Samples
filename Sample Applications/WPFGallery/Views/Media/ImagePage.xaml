@@ -41,7 +41,7 @@
 
         <ScrollViewer Grid.Row="1" Margin="0,0,0,24" Padding="0,0,24,0">
             <StackPanel Margin="0,0,0,24">
-                <controls:ControlExample
+                <controls:ControlExample2
                     Margin="10"
                     HeaderText="Standand Image from a local file."
                     XamlCode="&lt;Image Height=&quot;100&quot; Source=&quot;Assets\MyImage.jpg&quot; /&gt;">
@@ -49,7 +49,7 @@
                         Height="200"
                         HorizontalAlignment="Left"
                         Source="pack://application:,,,/Assets/win11-dashboard.png" />
-                </controls:ControlExample>
+                </controls:ControlExample2>
             </StackPanel>
         </ScrollViewer>
     </Grid>

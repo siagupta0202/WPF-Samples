@@ -36,12 +36,12 @@
 
         <ScrollViewer Grid.Row="1" Margin="0,0,0,24" Padding="0,0,24,0">
             <StackPanel Margin="0,0,0,24">
-                <controls:ControlExample Margin="10" HeaderText="A 2-state CheckBox." XamlCode="&lt;CheckBox Content=&quot;Two-state CheckBox&quot; /&gt;">
+                <controls:ControlExample2 Margin="10" HeaderText="A 2-state CheckBox." XamlCode="&lt;CheckBox Content=&quot;Two-state CheckBox&quot; /&gt;">
                     <CheckBox AutomationProperties.Name="Sample Two State" Content="Two-state CheckBox" />
-                </controls:ControlExample>
+                </controls:ControlExample2>
 
 
-                <controls:ControlExample
+                <controls:ControlExample2
                     Margin="10,32,10,10"
                     HeaderText="A 3-state CheckBox."
                     XamlCode="&lt;CheckBox IsThreeState=&quot;True&quot; Content=&quot;Three-state CheckBox&quot; IsChecked=&quot;{x:Null}&quot; /&gt;">
@@ -50,9 +50,9 @@
                         Content="Three-state CheckBox"
                         IsChecked="{x:Null}"
                         IsThreeState="True" />
-                </controls:ControlExample>
+                </controls:ControlExample2>
 
-                <controls:ControlExample
+                <controls:ControlExample2
                     Margin="10,32,10,10"
                     HeaderText="Using a 3-state CheckBox."
                     XamlCode="&lt;StackPanel&gt;             &#10;&#9;&lt;CheckBox Content=&quot;Select all&quot; IsThreeState=&quot;True&quot; /&gt;             &#10;&#9;&lt;CheckBox Margin=&quot;24,0,0,0&quot; Content=&quot;Option 1&quot; /&gt;             &#10;&#9;&lt;CheckBox Margin=&quot;24,0,0,0&quot; Content=&quot;Option 2&quot; /&gt;             &#10;&#9;&lt;CheckBox Margin=&quot;24,0,0,0&quot; Content=&quot;Option 3&quot; /&gt;             &#10;&lt;/StackPanel&gt;">
@@ -82,7 +82,7 @@
                             Content="Option 3"
                             IsChecked="{Binding ViewModel.OptionThreeCheckBoxChecked, Mode=TwoWay}" />
                     </StackPanel>
-                </controls:ControlExample>
+                </controls:ControlExample2>
             </StackPanel>
 
         </ScrollViewer>

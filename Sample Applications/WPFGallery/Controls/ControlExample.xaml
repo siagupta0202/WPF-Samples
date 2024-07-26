@@ -4,8 +4,6 @@
     xmlns:controls="clr-namespace:WPFGallery.Controls"
     xmlns:helpers="clr-namespace:WPFGallery.Helpers">
 
-    <helpers:NullToVisibilityConverter x:Key="NullToVisibilityConverter" />
-
     <Style x:Key="SelectionTextBox" TargetType="TextBox">
         <Setter Property="Foreground" Value="{DynamicResource TextControlForeground}" />
         <Setter Property="FontSize" Value="{DynamicResource ControlContentThemeFontSize}" />
@@ -109,7 +107,7 @@
                                     BorderThickness="1"
                                     Visibility="Visible" />
 
-                                <StackPanel x:Name="CsharpCodeBlock">
+                                <!--<StackPanel x:Name="CsharpCodeBlock">
                                     <Grid>
                                         <Grid.ColumnDefinitions>
                                             <ColumnDefinition Width="*" />
@@ -134,7 +132,7 @@
                                         BorderThickness="0"
                                         IsReadOnly="True"
                                         Text="{TemplateBinding CsharpCode}" />
-                                </StackPanel>
+                                </StackPanel>-->
                             </StackPanel>
                         </Expander>
                     </Grid>
@@ -145,10 +143,10 @@
                             <Setter TargetName="Border" Property="Visibility" Value="Collapsed" />
                         </Trigger>
 
-                        <Trigger Property="CsharpCode" Value="{x:Null}">
+                        <!--<Trigger Property="CsharpCode" Value="{x:Null}">
                             <Setter TargetName="CsharpCodeBlock" Property="Visibility" Value="Collapsed" />
                             <Setter TargetName="Border" Property="Visibility" Value="Collapsed" />
-                        </Trigger>
+                        </Trigger>-->
                     </ControlTemplate.Triggers>
                 </ControlTemplate>
             </Setter.Value>
